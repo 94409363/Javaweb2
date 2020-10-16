@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function del1(){
+            if(confirm("你确定要删除吗？")){
+                document.getElementById("apple").style.visibility="hidden";
+            }
+        }
+        function res1(){
+            document.getElementById("apple").style.visibility="visible";
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="apple">苹果手机</td>
+            <td><input type="button" name="" id="del" value="删除" onclick="del1()"></td>
+            <td><input type="button" name="" id="res" value="恢复" onclick="res1()"></td>
+        </tr>
+    </table>
+</body>
+</html>

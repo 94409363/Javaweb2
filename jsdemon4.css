@@ -1,0 +1,39 @@
+#divhead{
+   width: 100%;
+}
+
+td{
+    text-align: left;
+    font-size: 12px;
+    vertical-align: top;
+}
+.headtalbe td{
+    padding: 10px 50px 25px 135px;
+}
+#divmenu{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    border-top: 2px;
+    border-top-color: chartreuse;
+    border-top-style: solid;
+    font-size: 14px;
+}
+#divmenu a{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+#divsearch{
+    width: 100%;
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+
+}
+#divsearch td{
+    text-align: right;
+    padding: 10px 220px 10px 10px;
+}

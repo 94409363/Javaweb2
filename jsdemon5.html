@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .dome{
+            width: 400px;
+            height: 430px;
+            margin: 50px auto;
+            background:#CCC;
+            padding: 20px;
+        }
+        .dome>input{
+            width: 100%;
+            height: 50px;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .dome>button{
+            width: 90px;
+            height: 60px;
+            background-color: white;
+            border: none;
+            margin: 5px;
+            float: left;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dome">
+        <input type="" name="" id="ipt">
+        <button onclick="AddCount(this.innerText)">7</button>
+        <button onclick="AddCount(this.innerText)">8</button>
+        <button onclick="AddCount(this.innerText)">9</button>
+        <button onclick="BS()">←</button>
+
+        <button onclick="AddCount(this.innerText)">4</button>
+        <button onclick="AddCount(this.innerText)">5</button>
+        <button onclick="AddCount(this.innerText)">6</button>
+        <button onclick="AddCount(this.innerText)">+</button>
+
+        <button onclick="AddCount(this.innerText)">1</button>
+        <button onclick="AddCount(this.innerText)">2</button>
+        <button onclick="AddCount(this.innerText)">3</button>
+        <button onclick="AddCount(this.innerText)">-</button>
+
+        <button onclick="AddCount(this.innerText)">%</button>
+        <button onclick="AddCount(this.innerText)">0</button>
+        <button onclick="AddCount(this.innerText)">.</button>
+        <button onclick="AddCount(this.innerText)">*</button>
+
+        <button onclick="Clert()">AC</button>
+        <button onclick="AddCount(this.innerText)">/</button>
+        <button style="width: 190px;background:#333;color:white" onclick="result()">=</button>
+    </div>
+    
+</body>
+<script>
+    var ipt=document.getElementById("ipt");
+    function AddCount(a){
+        ipt.value+=a;//+=让数能够顺序添加，而不被取代
+    }
+    function result(){
+        ipt.value=eval(ipt.value);//计算字符串
+    }
+    function Clert(){
+        ipt.value="";
+    }
+    function BS(){
+        ipt.value=ipt.value.slice(0,ipt.value.length-1);//返回字符串长度
+    }
+</script>
+</html>
